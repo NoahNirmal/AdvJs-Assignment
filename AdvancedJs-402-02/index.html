@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             width: 100vw;
             height: 100vh;
             display: flex;
@@ -19,7 +21,8 @@
             justify-content: center;
             align-items: center;
         }
-        .maincontainer{
+
+        .maincontainer {
             width: 60%;
             height: 100%;
             display: flex;
@@ -27,7 +30,8 @@
             justify-content: center;
             align-items: center;
         }
-        .para{
+
+        .para {
             width: 50%;
             height: 25%;
             display: flex;
@@ -36,14 +40,17 @@
             align-items: center;
 
         }
-        h2{
+
+        h2 {
             color: green;
         }
-        p{
+
+        p {
             font-size: 0.9rem;
             font-weight: bold;
         }
-        .imageshow{
+
+        .imageshow {
             width: 50%;
             height: 20%;
             display: flex;
@@ -52,52 +59,56 @@
             align-items: center;
 
         }
-        
-    
-
     </style>
 </head>
+
 <body>
-    <div id ="main" class="maincontainer">
+    <div id="main" class="maincontainer">
         <div class="para">
             <h2>Geekster</h2>
-        <p>click on the button to add image element</p>
-        <button onclick="showimg()" type="submit"> click me</button>
+            <p>click on the button to add image element</p>
+            <button onclick="showimg()"  id="btn"type="submit"> click me</button>
         </div>
     </div>
-       
 
-   
+
+
 
     <script>
-        var main=document.getElementById("main")
-        function showimg(){
-            console.log("hello")
-             var div= document.createElement("div")
-            console.log(div)
-            var h1= document.createElement("h1")
-            var img=document.createElement("img")
+        var main = document.getElementById("main")
+
+        function showimg() {
+            // setTimeout(() => {
+            //     document.location.reload();
+            // }, 5000);
+            var div = document.createElement("div")
+            var h1 = document.createElement("h1")
+            var img = document.createElement("img")
             div.appendChild(h1)
             div.appendChild(img)
             div.classList.add("imageshow")
-            h1.innerHTML="Image Element Added."
-            h1.style.fontSize="1rem"
-            h1.style.color="green"
-            img.src="https://bl-i.thgim.com/public/incoming/89s94/article65661458.ece/alternates/FREE_1200/Geekster%20Logo%20new%20%281%29.png"
+            h1.innerHTML = "Image Element Added."
+            h1.style.fontSize = "1rem"
+            h1.style.color = "green"
+            img.src = "https://bl-i.thgim.com/public/incoming/89s94/article65661458.ece/alternates/FREE_1200/Geekster%20Logo%20new%20%281%29.png"
             img.style.width = "25%";
             img.style.height = "20%";
-            
+            // var button= document.getElementById("btn")
+            // console.log(button)
+            // button.style.display = "none";
+
             main.appendChild(div)
-           document.body.appendChild(main)
+            document.body.appendChild(main)
 
-           
 
-         
+
+
         }
-       
+
 
     </script>
-    
-    
+
+
 </body>
+
 </html>
