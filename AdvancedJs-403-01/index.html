@@ -28,31 +28,61 @@
             align-items: center;
 
         }
+        .key{
+            width: 50%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 5px  gray ;
+
+        }
+        .key h2{
+            font-size: 1.7rem;
+            color:#404040
+        }
+        
+        .charcode{
+            width: 15%;
+            height: 35%;
+            box-shadow: 2px 2px 5px  gray ;
+              display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
 
     </style>
 </head>
 <body>
+    <div class="maincontainer">
+       <div class="key">
+        <h2 id="keyname">You have to press key</h2>
+       </div>
+       <div class="charcode">
+        <h2 id ="charcode"></h2>
+       </div>
+    </div>
 
 
     <script>
         document.addEventListener('keypress',(event)=>{
-            var div= document.createElement("div")
-            div.classList.add("maincontainer")
-            var img1= document.createElement("img")
-            var img2= document.createElement("img")
-            img1.src="./image/youpressedenter.png"
-            img2.src="./image/13.png"
-            div.appendChild(img1)
-            div.appendChild(img2)
-            document.body.appendChild(div)
-
-            
-            
-            
-
-
-
-
+           console.log(event)
+           var key=event.key
+           var charcode=event.charCode
+           var name=document.getElementById("keyname")
+           console.log(name)
+           name.innerHTML=` You pressed  `
+           var code= document.getElementById("charcode")
+           code.innerHTML=charcode
+           code.style.fontSize="3rem"
+           code.style.color="#56ba77"
+           var a= document.createElement("a")
+           name.appendChild(a)
+           a.innerHTML=key
+           a.style.color="#56ba77"
+           
+          
          
         })
     </script>

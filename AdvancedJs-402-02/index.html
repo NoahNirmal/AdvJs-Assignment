@@ -51,8 +51,17 @@
         }
 
         .imageshow {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+        .imageadded{
             width: 50%;
-            height: 20%;
+            height: 25%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -69,18 +78,19 @@
             <p>click on the button to add image element</p>
             <button onclick="showimg()"  id="btn"type="submit"> click me</button>
         </div>
+        <div  id ="imageadded"class="imageadded">
+
+        </div>
     </div>
 
 
 
 
     <script>
-        var main = document.getElementById("main")
+        var imageadded = document.getElementById("imageadded")
 
         function showimg() {
-            // setTimeout(() => {
-            //     document.location.reload();
-            // }, 5000);
+            imageadded.innerHTML=""
             var div = document.createElement("div")
             var h1 = document.createElement("h1")
             var img = document.createElement("img")
@@ -93,13 +103,9 @@
             img.src = "https://bl-i.thgim.com/public/incoming/89s94/article65661458.ece/alternates/FREE_1200/Geekster%20Logo%20new%20%281%29.png"
             img.style.width = "25%";
             img.style.height = "20%";
-            // var button= document.getElementById("btn")
-            // console.log(button)
-            // button.style.display = "none";
 
-            main.appendChild(div)
-            document.body.appendChild(main)
-
+            imageadded.appendChild(div)
+          
 
 
 
