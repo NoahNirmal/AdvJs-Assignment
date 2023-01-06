@@ -41,10 +41,15 @@
             font-size: 1.7rem;
             color:#404040
         }
-        
-        .charcode{
+        .code{
             width: 15%;
             height: 35%;
+
+        }
+        
+        .charcode{
+            width: 100%;
+            height: 100%;
             box-shadow: 2px 2px 5px  gray ;
               display: flex;
             justify-content: center;
@@ -55,32 +60,37 @@
     </style>
 </head>
 <body>
-    <div class="maincontainer">
+    <div  id ="main"class="maincontainer">
        <div class="key">
         <h2 id="keyname">You have to press key</h2>
        </div>
-       <div class="charcode">
-        <h2 id ="charcode"></h2>
+       <div   id="code"class="code">
        </div>
     </div>
 
 
     <script>
         document.addEventListener('keypress',(event)=>{
-           console.log(event)
+            var main= document.getElementById("code")
+            main.innerHTML=""
+
            var key=event.key
            var charcode=event.charCode
            var name=document.getElementById("keyname")
-           console.log(name)
            name.innerHTML=` You pressed  `
-           var code= document.getElementById("charcode")
-           code.innerHTML=charcode
-           code.style.fontSize="3rem"
-           code.style.color="#56ba77"
+           var codediv= document.createElement("div")
+           codediv.classList.add("charcode")
+           var h2=  document.createElement("h2")
+           codediv.appendChild(h2)
+           h2.innerHTML=charcode
+           h2.style.fontSize="3rem"
+           h2.style.color="#56ba77"
            var a= document.createElement("a")
            name.appendChild(a)
            a.innerHTML=key
            a.style.color="#56ba77"
+           main.appendChild(codediv)
+
            
           
          
