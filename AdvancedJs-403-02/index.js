@@ -6,6 +6,9 @@ for(let i=0;i<button.length;i++){
     })
     
 }
+document.addEventListener('keypress',function(event){
+    drumsound(event.key)
+})
 
 function drumsound(key){
     if(key=='w'){
