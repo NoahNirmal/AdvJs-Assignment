@@ -12,7 +12,7 @@ function calculate(){
 
     var total = (amount * service) / people;
     var result= document.getElementById("resulth1")
-    result.innerHTML=` <p>Tip Amount</p><h1>$${total.toFixed(2)}</h1><p>each<p>`
+    result.innerHTML=` <p>Tip Amount</p><h1> <sup>$</sup>${total.toFixed(2)}</h1><p>each<p>`
 
 
 }
