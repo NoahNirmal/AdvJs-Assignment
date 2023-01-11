@@ -14,5 +14,9 @@ AdvancedJs-402-03  :-  https://noah-1711.github.io/AdvJs-Assignment/AdvancedJs-4
 
 AdvancedJs-403-01  :-  https://noah-1711.github.io/AdvJs-Assignment/AdvancedJs-403-01/
 
+AdvancedJs-403-02  :-  https://noah-1711.github.io/AdvJs-Assignment/AdvancedJs-403-02/
+
+AdvancedJs-403-03  :-  https://noah-1711.github.io/AdvJs-Assignment/AdvancedJs-403-03/
+
 
 
