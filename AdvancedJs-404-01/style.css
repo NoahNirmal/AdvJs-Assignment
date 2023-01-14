@@ -40,8 +40,6 @@ input{
     padding-left: 0.3rem;
     outline: none;
     border-radius: 8px;
-    font-size: 1rem;
-
 }
 select{
     width: 15%;
@@ -49,8 +47,6 @@ select{
     margin: 0.3rem;
     padding-left: 0.3rem;
     border-radius: 8px;
-    font-size: 1rem;
-
 
 
 }
@@ -59,8 +55,6 @@ button{
     height: 40%;
     margin: 0.3rem;
     border-radius: 8px;
-    font-size: 1rem;
-
 
 }
 
@@ -121,19 +115,19 @@ button{
     input{
         width: 35%;
         height: 50%;
-        font-size: 1rem;
+       
 
     
     }
     select{
         width: 30%;
         height: 50%;
-        font-size: 1rem;
+       
     }
     button{
         width: 20%;
         height: 50%;
-        font-size: 1rem;
+       
     
     }
     .content{
@@ -178,13 +172,13 @@ button{
     input{
         width: 30%;
         height: 50%;
-        font-size: 1rem;
+      
     
     }
     select{
         width: 25%;
         height: 50%;
-        font-size: 1rem;
+      
 
     
     
@@ -193,7 +187,7 @@ button{
         width: 15%;
         height: 40%;
         height: 50%;
-        font-size: 1rem;
+      
     
     }
     .content{
