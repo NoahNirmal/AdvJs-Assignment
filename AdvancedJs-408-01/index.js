@@ -1,4 +1,6 @@
-let objectdeatils = [];
+// let objectdeatils = [];
+let date = new Date().toJSON().slice(0,16);
+console.log(date); // 2022-06-17T11:06:50.369Z
 
 var deletekey = 0;
 function adduser() {
@@ -15,45 +17,44 @@ var score = +document.getElementById("score").value;
 
    if(fname==""||lname==""||country==""||score==""){
       para.innerHTML = ""
-      para.innerHTML = " <h1>please input data </h1> "
+      para.innerHTML = "All fields are required*"
+      para.style.fontSize="1.5rem"
+      para.style.color="red"
    }
    else{
     para.innerHTML = "";
   console.log("clicked");
-  const details = {
-    fullname: "",
-    country: "",
-    score: "",
-  };
+//   const details = {
+//     fullname: "",
+//     country: "",
+//     score: "",
+//   };
 
-  // console.log(fname)
-  // console.log(lname)
-  // console.log(country)
-  // console.log(score)
 
-  details.fullname = fname + " " + lname;
-  details.country = country;
-  details.score = score;
 
-  objectdeatils.push(details);
-  console.log(objectdeatils);
+//   details.fullname = fname + " " + lname;
+//   details.country = country;
+//   details.score = score;
 
-  objectdeatils.map((ele) => {
+//   objectdeatils.push(details);
+//   console.log(objectdeatils);
+
+//   objectdeatils.map((ele) => {
     table.innerHTML += `
         <tr id="tr${deletekey}">
-        <td id="full">${ele.fullname}</td>
-        <td id="coun">${ele.country}</td>
-        <td id="scr${deletekey}">${ele.score}</td>
-        <td id="del${deletekey}"><button onclick="deleteuser(${deletekey})">delete</button></td>
-        <td id="plus5"><button onclick="plusfive(${deletekey})">+5</button></td>
-        <td id="minus5"><button  onclick="subfive(${deletekey})">-5</button></td>
+        <td id="full">${fname + " " + lname}</td>
+        <td id="coun">${country}</td>
+        <td id="scr${deletekey}">${score}</td>
+        <td class="btn"id="del${deletekey}"><button onclick="deleteuser(${deletekey})">delete</button></td>
+        <td class="btn" id="plus5"><button onclick="plusfive(${deletekey})">+5</button></td>
+        <td class="btn" id="minus5"><button  onclick="subfive(${deletekey})">-5</button></td>
 
         </tr>`;
         console.log(deletekey);
 
         deletekey = deletekey + 1;
 
-  });
+//   });
 
   document.getElementById("fname").value = "";
   document.getElementById("lname").value = "";
@@ -72,10 +73,10 @@ function deleteuser(deletekey) {
 
 
 //   let arr=[{name:"Swati", age:'20'}, {name:'Priya', age:'21'}, {name:'tannu', age:'19'}];
-        console.log(objectdeatils);
+        // console.log(objectdeatils);
         // let idx=1
-        objectdeatils=objectdeatils.slice(0,deletekey).concat(objectdeatils.slice(deletekey+1,objectdeatils.length))
-        console.log(objectdeatils)
+        // objectdeatils=objectdeatils.slice(0,deletekey).concat(objectdeatils.slice(deletekey+1,objectdeatils.length))
+        // console.log(objectdeatils)
 
    
 
@@ -93,11 +94,11 @@ function plusfive(deletekey){
 }
 
 function subfive(deletekey){
-  var addfive = document.getElementById(`scr${deletekey}`);
+  var subfive = document.getElementById(`scr${deletekey}`);
 
   console.log("sub")
   
-  addfive.innerHTML= +addfive.innerHTML-5
+  subfive.innerHTML= +subfive.innerHTML-5
 
 
 
