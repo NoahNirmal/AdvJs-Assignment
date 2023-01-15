@@ -21,14 +21,14 @@ function population(){
 
     for(let i=0;i<10;i++){
         var div= document.createElement("div")
-        div.style.width="70%"
-        div.style.height="9%"
+        div.style.width="80%"
+        div.style.height="10%"
         div.style.display="flex"
         div.style.justifyContent="space-evenly"
         div.style.alignItems="center"
 
         var countrydiv= document.createElement("div")
-        countrydiv.style.width="20%"
+        countrydiv.style.width="30%"
         countrydiv.style.height="100%"
         countrydiv.style.display="flex"
         countrydiv.style.justifyContent="space-between"
@@ -108,8 +108,8 @@ function languages(){
     for(let i=0;i<10;i++){
         var toptenlang=sortedlangcount[i]
         var div= document.createElement("div")
-        div.style.width="70%"
-        div.style.height="9%"
+        div.style.width="80%"
+        div.style.height="10%"
         div.style.display="flex"
         div.style.justifyContent="space-evenly"
         div.style.alignItems="center"
