@@ -41,15 +41,17 @@ var score = +document.getElementById("score").value;
 
 //   objectdeatils.map((ele) => {
     table.innerHTML += `
-        <tr id="tr${deletekey}">
-        <td id="full">${fname + " " + lname}</td>
-        <td id="coun">${country}</td>
-        <td id="scr${deletekey}">${score}</td>
-        <td class="btn"id="del${deletekey}"><button onclick="deleteuser(${deletekey})">delete</button></td>
-        <td class="btn" id="plus5"><button onclick="plusfive(${deletekey})">+5</button></td>
-        <td class="btn" id="minus5"><button  onclick="subfive(${deletekey})">-5</button></td>
+        <div class="tr" id="tr${deletekey}">
+        <div class="td" id="full">${fname + " " + lname}</div>
+        <div class="td" id="coun">${country}</div>
+        <div class="td" id="scr${deletekey}">${score}</div>
+        <div class="btn">
+        <button id="del${deletekey}"onclick="deleteuser(${deletekey})">delete</button>
+       <button id="plus5" onclick="plusfive(${deletekey})">+5</button>
+       <button id="minus5" onclick="subfive(${deletekey})">-5</button>
+       </div>
 
-        </tr>`;
+        </div>`;
         console.log(deletekey);
 
         deletekey = deletekey + 1;
