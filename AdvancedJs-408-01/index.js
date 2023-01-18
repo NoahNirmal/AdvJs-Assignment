@@ -1,6 +1,8 @@
-// let objectdeatils = [];
-let date = new Date().toJSON().slice(0,16);
-console.log(date); // 2022-06-17T11:06:50.369Z
+
+let date = new Date().toLocaleString("en-US", {timeZone: 'Asia/Kolkata'});
+date= new Date(date)
+let currdate=date.toString().slice(0,21)
+console.log(currdate);
 
 var deletekey = 0;
 function adduser() {
@@ -17,9 +19,10 @@ var score = +document.getElementById("score").value;
 
    if(fname==""||lname==""||country==""||score==""){
       para.innerHTML = ""
-      para.innerHTML = "All fields are required*"
-      para.style.fontSize="1.5rem"
+      para.innerHTML = "All fields are required"
+      para.style.fontSize="1rem"
       para.style.color="red"
+      para.style.fontWeight="bold"
    }
    else{
     para.innerHTML = "";
@@ -42,11 +45,12 @@ var score = +document.getElementById("score").value;
 //   objectdeatils.map((ele) => {
     table.innerHTML += `
         <div class="tr" id="tr${deletekey}">
-        <div class="td" id="full">${fname + " " + lname}</div>
-        <div class="td" id="coun">${country}</div>
+        <div class="td" id="full">${(fname + " " + lname).toUpperCase()} <p> ${currdate}</p></div>
+        <div class="td" id="coun">${country.toUpperCase()}</div>
         <div class="td" id="scr${deletekey}">${score}</div>
         <div class="btn">
-        <button id="del${deletekey}"onclick="deleteuser(${deletekey})">delete</button>
+        <button style="color:#cb4238" id="del${deletekey}"onclick="deleteuser(${deletekey})"><i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
        <button id="plus5" onclick="plusfive(${deletekey})">+5</button>
        <button id="minus5" onclick="subfive(${deletekey})">-5</button>
        </div>
