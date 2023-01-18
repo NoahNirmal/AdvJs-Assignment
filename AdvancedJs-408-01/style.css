@@ -51,7 +51,7 @@ h1{
 input {
     width: 13%;
     height: 40%;
-    margin: 0.5rem;
+    margin: 0.2rem;
     padding-left: 0.5rem;
     font-size: 1rem;
     border: 2px #e5c9c5 solid;
@@ -61,7 +61,7 @@ input {
 .inputs button {
     width: 10%;
     height: 40%;
-    margin: 0.5rem;
+    margin: 0.3rem;
     font-size: 1rem;
     background-color:#e5c9c5;
     border: none;
@@ -92,7 +92,7 @@ input {
 
 .tr {
     width: 100%;
-    height: 3rem;
+    height: 3.5rem;
     background-color:#e5c9c5;
     display: flex;
     justify-content: space-between;
@@ -110,7 +110,7 @@ input {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    margin-left: 0.5rem;
+    margin: 0.5rem; 
 
 }
 .td p{
@@ -127,7 +127,7 @@ input {
 }
 
 .btn button{
-    width: 20%;
+    width: 23%;
     height: 80%;
     border-radius: 50%;
     background-color: white;

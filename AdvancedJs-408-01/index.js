@@ -19,8 +19,8 @@ var score = +document.getElementById("score").value;
 
    if(fname==""||lname==""||country==""||score==""){
       para.innerHTML = ""
-      para.innerHTML = "All fields are required"
-      para.style.fontSize="1rem"
+      para.innerHTML = "All fields are required*"
+      para.style.fontSize="1.1rem"
       para.style.color="red"
       para.style.fontWeight="bold"
    }
