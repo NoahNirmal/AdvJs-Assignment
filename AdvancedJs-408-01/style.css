@@ -135,7 +135,9 @@ input {
     border: none;
         
 }
-
+i{
+    font-size: .7rem;
+}
 /* @media only screen and (max-width:480px){
     body{
         border: 2px red solid;

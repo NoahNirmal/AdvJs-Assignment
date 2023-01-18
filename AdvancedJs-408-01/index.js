@@ -49,7 +49,7 @@ var score = +document.getElementById("score").value;
         <div class="td" id="coun">${country.toUpperCase()}</div>
         <div class="td" id="scr${deletekey}">${score}</div>
         <div class="btn">
-        <button style="color:#cb4238" id="del${deletekey}"onclick="deleteuser(${deletekey})"><i class="fa fa-trash" aria-hidden="true"></i>
+        <button style="color:#cb4238" id="del${deletekey}"onclick="deleteuser(${deletekey})"><i class="fa fa-trash-can" aria-hidden="true"></i>
         </button>
        <button id="plus5" onclick="plusfive(${deletekey})">+5</button>
        <button id="minus5" onclick="subfive(${deletekey})">-5</button>
