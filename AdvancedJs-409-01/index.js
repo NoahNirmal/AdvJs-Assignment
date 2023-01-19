@@ -38,7 +38,6 @@ var emptyerror=document.getElementById("emptyerror")
   } 
   else{
    error.fname=false
-
     parafname.innerText= ""
   }
 
