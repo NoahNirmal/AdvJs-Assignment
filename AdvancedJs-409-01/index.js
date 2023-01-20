@@ -110,18 +110,20 @@ function submitform(){
 
       console.log("errors are there");
   } else {
+   
       console.log("button clicked");
       console.log("data", DataToSend);
       emptyerror.innerText = ""
+      alert("Form Submitted")
 
   }
 
   fname.value =""
-  lname.value =""
-  email.value =""
-  pass.value =""
-  tele.value =""
-  bio.value =""
+    lname.value =""
+    email.value =""
+    pass.value =""
+    tele.value =""
+    bio.value =""
 
    
 }
