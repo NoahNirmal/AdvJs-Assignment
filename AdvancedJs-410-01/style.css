@@ -26,7 +26,7 @@ body{
 }
 
 .navbar{
-    width: 95%;
+    width: 85%;
     height: 8vh;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ p{
 
 }
 .search{
-    width: 95%;
+    width: 85%;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -97,8 +97,8 @@ h3{
 
 }
 .inputs{
-    width: 50%;
-    height: 43%;
+    width: 40%;
+    height: 40%;
     border: 2px gray solid;
     display: flex;
   border-radius: 10px;
@@ -110,6 +110,7 @@ input{
     border-bottom-left-radius: 10px;
     border: none;
     outline: none;
+    padding-left: .5rem;
 }
 .inputs button{
     width: 20%;
@@ -133,8 +134,8 @@ input{
     flex-wrap: wrap;
 }
 .profile{
-    width: 23%;
-    height: 15%;
+    width: 250px;
+    height: 50px;
     border: 1px black solid;
     margin: 0.5rem;
     display: flex;
@@ -145,15 +146,17 @@ input{
 
 }
 img{
-    width:  50px;
-    height: 50px;
+    width:  45px;
+    height: 45px;
     border-radius: 50%;
+    margin: .5rem;
 
 }
 .name{
     width: 77%;
     height: 100%;
    margin-left: 0.5rem;
+   margin-top: .5rem;
 }
 
 .name a{
