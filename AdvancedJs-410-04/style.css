@@ -27,11 +27,10 @@ body{
 }
 .heading h1{
     font-weight: 100;
-    font-size: 2.3rem;
     color: #1f4f76;
 }
 .search{
-    width:28%;
+    width:25%;
     height: 30%;
     display: flex;
     flex-direction: column;
@@ -58,7 +57,7 @@ button{
 
 
 .result{
-    width:28%;
+    width:25%;
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -88,7 +87,7 @@ button{
 }
 .details p{
     color: #1e3cb6;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
 }
 .details a{
