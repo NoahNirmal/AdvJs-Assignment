@@ -13,7 +13,7 @@ console.log(author);
     const data= await res.json()
     console.log(data)
 
-    heading.innerHTML= ` " ${data.content} "`
+    heading.innerHTML= ` <i class="fa fa-quote-left" aria-hidden="true"></i> ${data.content} <i class="fa fa-quote-right" aria-hidden="true"></i>`
     author.innerHTML= ` ~ ${data.author}`
 
 
