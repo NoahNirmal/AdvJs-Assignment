@@ -2,6 +2,8 @@ console.log("hello")
  const word= document.getElementById("inputsearch")
  console.log(word.value)
  const shortdef = document.getElementById("shortdef")
+
+ const result =document.getElementById("result")
  
  async function searchword(){
 
@@ -16,7 +18,11 @@ console.log("hello")
      
             // console.log(ele)
             console.log(data[0].shortdef)
-            shortdef.innerHTML=`${data[0].shortdef[0]}
-            `
+            
+            result.innerHTML=`
+            <p>${data[0].shortdef[0]} </p>
+            <audio controls>  
+            <source src="koyal.mp3" type="audio/mpeg">    
+          </audio> `
        
 }
