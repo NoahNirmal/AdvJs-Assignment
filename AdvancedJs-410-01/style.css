@@ -135,8 +135,7 @@ input{
 }
 .profile{
     width: 250px;
-    height: 50px;
-    border: 1px black solid;
+    height: 60px;
     margin: 0.5rem;
     display: flex;
     justify-content: center;
@@ -163,4 +162,129 @@ img{
     text-decoration: none;
     color: gray;
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width:480px) {
+
+    .maincontainer{
+        width: 95%;
+
+    }
+    
+    .navbar{
+        width: 100%;
+
+    }
+    .logo{
+        width: 40%;
+      
+    }
+    .pages{
+        width: 40%;
+     
+    }
+    .search{
+        width: 100%;
+
+    
+    }
+    .heading{
+        width: 90%;
+
+    }
+    .heading button{
+     
+        font-size: 0.8rem;
+    
+    }
+    .inputs{
+        width: 80%;
+       
+    }
+    input{
+     font-size: 1rem;
+
+    }
+  
+    
+}
+
+@media only screen and (min-width:481px)  and (max-width:600px){
+
+    .navbar{
+        width: 100%;
+
+    }
+    .logo{
+        width: 50%;
+      
+    }
+    .pages{
+        width: 40%;
+     
+    }
+    .search{
+        width: 100%;
+
+    
+    }
+    .heading{
+        width: 90%;
+
+    }
+    .heading button{
+     
+        font-size: 0.8rem;
+    
+    }
+    .inputs{
+        width: 80%;
+       
+    }
+    input{
+     font-size: 1rem;
+
+    }
+  
+    
+}
+
+@media only screen and (min-width:601px)  and (max-width:800px){
+
+    .navbar{
+        width: 100%;
+
+    }
+    .logo{
+        width: 50%;
+      
+    }
+    .pages{
+        width: 40%;
+     
+    }
+    .search{
+        width: 80%;
+
+    
+    }
+    .heading{
+        width: 70%;
+
+    }
+    .heading button{
+     
+        font-size: 0.8rem;
+    
+    }
+    .inputs{
+        width: 40%;
+       
+    }
+    input{
+     font-size: 1rem;
+
+    }
+  
+    
 }
