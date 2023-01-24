@@ -45,6 +45,7 @@ input{
     padding-left: .5rem;
     font-size: 1rem;
     font-weight: bold;
+    outline: none;
 }
 button{
     width: 25%;
@@ -92,4 +93,149 @@ button{
 }
 .details a{
     color: #7a3f62;
+}
+
+
+@media only screen and (max-width:480px){
+    .heading{
+        width:75%;
+     
+    }
+    .heading h1{
+        font-size: 1.1rem;
+      
+    }
+    .search{
+        width:75%;
+        height: 25%;
+
+    
+    }
+    input{
+        width: 70%;
+        height: 25%;
+      
+    }
+    button{
+        width: 35%;
+       
+      
+    }
+    
+    
+    .result{
+        width:75%;
+        height: 30%;
+    }
+    
+   
+    
+   
+}
+
+
+@media only screen and (min-width:481px) and (max-width:600px){
+    .heading{
+        width:70%;
+     
+    }
+    .heading h1{
+        font-size: 1.5rem;
+      
+    }
+    .search{
+        width:65%;
+        height: 25%;
+
+    
+    }
+    input{
+        width: 70%;
+        height: 25%;
+      
+    }
+    button{
+        width: 35%;
+       
+      
+    }
+    
+    
+    .result{
+        width:65%;
+        height: 30%;
+    }
+    
+   
+    
+   
+}
+
+
+@media only screen and (min-width:601px) and (max-width:800px){
+    .heading{
+        width:70%;
+     
+    }
+    .heading h1{
+        font-size: 1.8rem;
+      
+    }
+    .search{
+        width:60%;
+        height: 30%;
+
+    }
+    input{
+        width: 65%;
+        height: 25%;
+      
+    }
+    button{
+        width: 30%;
+  
+    }
+
+    .result{
+        width:60%;
+        height: 30%;
+    }
+    
+   
+    
+   
+}
+
+@media only screen and (min-width:801px) and (max-width:1000px){
+    .heading{
+        width:70%;
+     
+    }
+    .heading h1{
+        font-size: 1.8rem;
+      
+    }
+    .search{
+        width:45%;
+        height: 30%;
+
+    }
+    input{
+        width: 65%;
+        height: 25%;
+      
+    }
+    button{
+        width: 30%;
+  
+    }
+
+    .result{
+        width:45%;
+        height: 30%;
+    }
+    
+   
+    
+   
 }
