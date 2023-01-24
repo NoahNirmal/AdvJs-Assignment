@@ -72,6 +72,12 @@ button{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+
+}
+
+p{
+    font-size: 1.2rem;
 
 }
 
@@ -85,6 +91,7 @@ button{
         width: 30%;
     
     }
+ 
 }
 
 @media only screen and (min-width:481px) and (max-width:750px){
@@ -96,7 +103,5 @@ button{
         width: 22%;
     
     }
-    p{
-        font-size: 1.2rem;
-    }
+ 
 }
